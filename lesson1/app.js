@@ -1,0 +1,115 @@
+console.log("hi");
+
+var c = document.getElementById('one');
+var ctx = c.getContext('2d');
+ctx.fillStyle = "rgb(0, 100, 100)";
+ctx.fillRect(100, 100, 100, 100);
+ctx.strokeStyle = "rgb(0, 100, 100)";
+ctx.strokeRect(80, 80, 140, 140);
+
+var c2 = document.getElementById('two');
+var ctx2 = c2.getContext('2d');
+ctx2.beginPath();
+ctx2.strokeStyle = "rgb(0, 100, 100)";
+ctx2.moveTo(75, 0);
+ctx2.lineTo(150, 100);
+ctx2.lineTo(75, 200);
+ctx2.lineTo(0, 100);
+ctx2.closePath();
+ctx2.stroke();
+ctx2.fillStyle = "rgb(0, 100, 100)";
+ctx2.fill();
+
+var c3 = document.getElementById('three');
+var ctx3 = c3.getContext('2d');
+ctx3.fillStyle = "rgb(0, 100, 100)";
+ctx3.fillRect(0, 0, 300, 300);
+ctx3.clearRect(20, 20, 120, 120);
+ctx3.clearRect(160, 20, 120, 120);
+ctx3.clearRect(160, 160, 120, 120);
+ctx3.clearRect(20, 160, 120, 120);
+
+var c4 = document.getElementById('four');
+var ctx4 = c4.getContext('2d');
+ctx4.fillStyle = "rgb(0, 100, 100)";
+ctx4.fillRect(0, 0, 100, 100);
+ctx4.fillRect(0, 200, 100, 100);
+ctx4.fillRect(200, 0, 100, 100);
+ctx4.fillRect(100, 100, 100, 100);
+ctx4.fillRect(200, 200, 100, 100);
+
+var c5 = document.getElementById('five');
+var ctx5 = c5.getContext('2d');
+ctx5.fillStyle = "rgb(0, 100, 100)";
+var x = 0;
+var y = 0;
+var width = 300;
+var height = 300;
+ctx5.fillRect(x, y, width, height);
+while (width > 0) {
+	x += 10;
+	y += 10;
+	width -= 20;
+	height -= 20;
+	ctx5.clearRect(x, y, width, height);
+	x += 10;
+	y += 10;
+	width -= 20;
+	height -= 20;
+	ctx5.fillRect(x, y, width, height);
+}
+
+var c6 = document.getElementById('six');
+var ctx6 = c6.getContext('2d');
+ctx6.fillStyle = "rgb(0, 100, 100)";
+ctx6.strokeStyle = "rgb(0, 100, 100)";
+ctx6.beginPath();
+ctx6.moveTo(0, 0);
+ctx6.lineTo(150, 150);
+ctx6.lineTo(0, 300);
+ctx6.closePath();
+ctx6.stroke();
+ctx6.fill();
+ctx6.beginPath();
+ctx6.moveTo(300, 0);
+ctx6.lineTo(150, 150);
+ctx6.lineTo(300, 300);
+ctx6.closePath();
+ctx6.stroke();
+ctx6.fill();
+
+var c7 = document.getElementById('seven');
+var ctx7 = c7.getContext('2d');
+ctx7.beginPath();
+ctx7.strokeStyle = "rgb(0, 100, 100)";
+ctx7.moveTo(0, 0);
+ctx7.lineTo(300, 300);
+ctx7.lineTo(300, 150);
+ctx7.lineTo(0, 150);
+ctx7.lineTo(0, 0);
+ctx7.moveTo(150, 150);
+ctx7.lineTo(150, 300);
+ctx7.lineTo(0, 300);
+ctx7.lineTo(300, 0);
+ctx7.lineTo(150, 0);
+ctx7.closePath();
+ctx7.stroke();
+ctx7.fillStyle = "rgb(0, 100, 100)";
+ctx7.fill();
+
+var c8 = document.getElementById('eight');
+var ctx8 = c8.getContext('2d');
+ctx8.fillStyle = "#89b6ff";
+ctx8.fillRect(0, 0, 800, 500);
+ctx8.fillStyle = "#26c12e";
+ctx8.fillRect(0, 332, 800, 168);
+ctx8.beginPath();
+ctx8.arc(100, 100, 50, 0, 6.28);
+ctx8.closePath();
+ctx8.stroke();
+ctx8.fillStyle = "#ffff87";
+ctx8.fill();
+ctx8.fillStyle = "#686868";
+ctx8.fillRect(100, 252, 150, 80);
+ctx8.clearRect(131.5, 272, 31.5, 31.5);
+ctx8.clearRect(194.5, 272, 31.5, 31.5);
