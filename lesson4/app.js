@@ -8,10 +8,11 @@ function preload(){
 	game.load.image('star','assets/star.png')
 	game.load.spritesheet('dude','assets/dude.png')
 	game.load.spritesheet('baddie','assets/baddie.png')
-	player = game.add.sprite(32, game.world.height - 150, 'dude');
+	
 }
 
 function create(){
+	player = game.add.sprite(32, game.world.height - 150, 'dude');
 	game.physics.startSystem(Phaser.Physics.ARCADE)
 	//Add background
 	game.add.sprite(0,0,'sky')
